@@ -1,0 +1,46 @@
+.site-main-section {
+    background-image: url('../img/mainPhoto.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #E7816B;
+    border-radius: 15px;
+    padding-top: 145px;
+    padding-bottom: 145px;
+    padding-left: 95px;
+}
+
+.site-main-title {
+    max-width: 540px;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 48px;
+    color: #FFFFFF;
+    margin-bottom: 11px;
+}
+
+.site-main-text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+    max-width: 445px;
+    margin-bottom: 40px;
+}
+
+.site-main-link {
+    padding: 18px 25px 16px 24px;
+    background-color: #fff;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    color: #333136;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.site-main-link:hover {
+    background-color: #FFAD9B;
+    color: #fff;
+    text-decoration: none;
+}

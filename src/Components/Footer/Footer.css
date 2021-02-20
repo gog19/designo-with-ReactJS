@@ -1,0 +1,41 @@
+.site-footer {
+    padding: 144px 166px 72px 165px;
+    background-color: #1D1C1E;
+}
+
+.site-footer-top {
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.site-footer-bottom {
+    margin-top: 31px;
+}
+
+.site-footer-address {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+.site-footer-contact {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+.site-footer-media {
+    margin-right: 16px;
+}
+
+.site-footer-media:last-child {
+    margin-right: 0;
+}
+
+.media {
+    margin-top: 34px;
+}

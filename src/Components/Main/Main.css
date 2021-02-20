@@ -1,0 +1,11 @@
+.site-main {
+    padding-top: 33px;
+    background-image: url('./img/Rectangle.svg');
+    background-repeat: no-repeat;
+    background-size: 1056px 594px;
+    background-position: calc(50% - 180px) 330px;
+}
+
+.site-theme-switcher .site-main {
+    background-color: #333;
+}

@@ -1,0 +1,49 @@
+.talking {
+    background-image: url('../img/last-back.png');
+    background-repeat: no-repeat;
+    padding: 72px 96px 48px 95px;
+    margin-top: -20px;
+    position: relative;
+    z-index: 55;
+    margin-bottom: -72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+
+.talking-title {
+    max-width: 268px;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 40px;
+    color: #FFFFFF;
+}
+
+.talking-text {
+    max-width: 460px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+
+.talking-link {
+    text-decoration: none;
+    padding: 17px 19px;
+    background-color: #fff;
+    color: #333;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    color: #333136;
+}
+
+.talking-link:hover {
+    text-decoration: none;
+    background-color: #FFAD9B;
+    color: #fff;
+}
