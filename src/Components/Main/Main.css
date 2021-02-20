@@ -9,3 +9,13 @@
 .site-theme-switcher .site-main {
     background-color: #333;
 }
+
+@media only screen and (max-width: 980px) {
+    .site-main {
+        background-image: none;
+        background-repeat: no-repeat;
+        background-size: 0;
+        background-position: 0;
+        padding-top: 0;    
+    }
+}

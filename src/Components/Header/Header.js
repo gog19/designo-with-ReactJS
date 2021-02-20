@@ -7,12 +7,12 @@ function Header() {
   const [nightMode, setNightMode] = useState(true);
   const [openMenu, toggleClass] = useState(false);
 
-  if (!nightMode) {
-    document.querySelector('body').classList.toggle('site-theme-switcher')
+  if (openMenu) {
+    document.querySelector('header').classList.toggle('header-menu--open')
   }
 
-  if (!openMenu) {
-    document.querySelector('header').classList.toggle('header-menu--open')
+  if (!nightMode) {
+    document.querySelector('body').classList.toggle('site-theme-switcher')
   }
 
   return (

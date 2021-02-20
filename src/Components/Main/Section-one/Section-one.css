@@ -1,13 +1,13 @@
 .site-main-section {
-    background-image: url('../img/mainPhoto.png');
-    background-size: contain;
+    background-image: url('../img/main-background.png');
     background-position: center;
     background-repeat: no-repeat;
-    background-color: #E7816B;
+    background-size: 100%;
     border-radius: 15px;
     padding-top: 145px;
     padding-bottom: 145px;
     padding-left: 95px;
+    margin-bottom: 80px;
 }
 
 .site-main-title {
@@ -37,10 +37,66 @@
     color: #333136;
     text-decoration: none;
     border-radius: 8px;
+    max-width: 96px;
 }
 
 .site-main-link:hover {
     background-color: #FFAD9B;
     color: #fff;
     text-decoration: none;
+}
+
+@media only screen and (max-width: 980px) {
+    .site-main-section {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .site-main-section {
+        background-image: url('../img/responsive-back.png');
+        background-size: 100%;
+        padding-top: 60px;
+        padding-bottom: 457px;
+
+    }
+
+    .site-main-title {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 8px;
+    }
+
+    .site-main-text {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 19px;
+    }
+
+    .site-main-link {
+        max-width: 152px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .site-main-title {
+        font-size: 32px;
+        line-height: 36px;
+        max-width: 440px;
+    }
+
+    .site-main-text {
+        max-width: 427px;
+    }
+}
+
+@media only screen and (max-width: 611px) {
+    .site-main-section {
+        background-image: url('../img/mobile-back.png');
+    }
 }
