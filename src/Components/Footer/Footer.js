@@ -6,7 +6,14 @@ import Twitter from './img/twitter.svg';
 import Pinterest from './img/pinterest.svg';
 import Instagram from './img/insta.svg';
 
+import { useLanguage } from '../Language/Language';
+import Info from '../LangInfo';
+
 function Footer() {
+
+  const [language, setLanguage] = useLanguage()
+	const MENU = Info[language];
+	const languageChange = e => setLanguage(e.target.value);
 
   return (
     <>
@@ -19,48 +26,59 @@ function Footer() {
             <nav>
               <ul className='site-nav'>
                 <li className='site-nav-item'>
-                  <a className='site-nav-link text-white' href='#'>OUR COMPANY</a>
+                  <a className='site-nav-link text-white' href='#'>{MENU.company}</a>
                 </li>
                 <li className='site-nav-item'>
-                  <a className='site-nav-link text-white' href='#'>LOCATIONS</a>
+                  <a className='site-nav-link text-white' href='#'>{MENU.locations}</a>
                 </li>
                 <li className='site-nav-item'>
-                  <a className='site-nav-link text-white' href='#'>CONTACT</a>
+                  <a className='site-nav-link text-white' href='#'>{MENU.contacts}</a>
                 </li>
               </ul>
             </nav>
           </div>
           <div className='site-footer-bottom d-flex justify-content-between'>
-            <p className='site-footer-address mb-0'><span className='d-block font-weight-bold'>Designo Central Office</span> 3886 Wellington Street <br/> Toronto, Ontario M9C 3J5</p>
-            <p className='site-footer-contact mb-0'>Contact Us (Central Office) <br/> P : +1 253-863-8967 <br/> M : contact@designo.co</p>
-            <ul className='list-unstyled d-flex align-items-center media mb-0'>
-              <li className='site-footer-media'>
-                <a href='#'>
-                  <img src={Facebook}/>
-                </a>
-              </li>
-              <li className='site-footer-media'>
-                <a href='#'>
-                  <img src={Youtube}/>
-                </a>
-              </li>
-              <li className='site-footer-media'>
-                <a href='#'>
-                  <img src={Twitter}/>
-                </a>
-              </li>
-              <li className='site-footer-media'>
-                <a href='#'>
-                  <img src={Pinterest}/>
-                </a>
-              </li>
-              <li className='site-footer-media'>
-                <a href='#'>
-                  <img src={Instagram}/>
-                </a>
-              </li>
-            </ul>
-          </div>
+            <p className='site-footer-address mb-0'><span className='d-block font-weight-bold'>Designo Central Office</span> 3886 Wellington Street <br /> Toronto, Ontario M9C 3J5</p>
+            <p className='site-footer-contact mb-0'>Contact Us (Central Office) <br /> P : +1 253-863-8967 <br /> M : contact@designo.co</p>
+            <div>
+              <ul className='list-unstyled d-flex align-items-center media mb-0'>
+                <li className='site-footer-media'>
+                  <a href='#'>
+                    <img src={Facebook} />
+                  </a>
+                </li>
+                <li className='site-footer-media'>
+                  <a href='#'>
+                    <img src={Youtube} />
+                  </a>
+                </li>
+                <li className='site-footer-media'>
+                  <a href='#'>
+                    <img src={Twitter} />
+                  </a>
+                </li>
+                <li className='site-footer-media'>
+                  <a href='#'>
+                    <img src={Pinterest} />
+                  </a>
+                </li>
+                <li className='site-footer-media'>
+                  <a href='#'>
+                    <img src={Instagram} />
+                  </a>
+                </li>
+              </ul>
+              <select
+                  className='site-lang'
+                  defaultValue={language}
+                  onChange={languageChange}
+                >
+                <option value='en'>Eng</option>
+                <option value='uz'>Uz</option>
+                <option value='ru'>Ru</option>
+              </select>
+            </div>
+          </div>4
         </div>
       </footer>
     </>

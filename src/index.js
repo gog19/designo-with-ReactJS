@@ -2,4 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import { ThemeProvider } from './Components/Theme/ThemeContext';
+import { Language } from './Components/Language/Language';
+
+ReactDOM.render(
+            <ThemeProvider>
+                <Language>
+                    <App />
+                </Language>
+            </ThemeProvider>,
+            document.getElementById('root')
+        );

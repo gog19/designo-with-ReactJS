@@ -36,6 +36,8 @@
     margin-right: 0;
 }
 
-.media {
-    margin-top: 34px;
+.site-lang {
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 12px;
 }
